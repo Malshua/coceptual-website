@@ -82,7 +82,7 @@ const Hero = () => {
 
               <Link
                 className="all__trans bg-[#2DD79B] hover:border-2 hover:bg-transparent border-white flex w-64 cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
-                href=""
+                href="https://media-frontend-ashen.vercel.app/login"
               >
                 Get Started
               </Link>

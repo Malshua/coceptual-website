@@ -165,9 +165,12 @@ const DesktopNav = () => {
           </ul>
 
           <div className="flex items-center gap-8">
-            <button className="py-6.5 hover:border-b-2 border-white all__trans text-white">
+            <Link
+              href="https://media-frontend-ashen.vercel.app/login"
+              className="py-6.5 hover:border-b-2 border-white all__trans text-white"
+            >
               <span>Login</span>
-            </button>
+            </Link>
 
             <Link
               className="all__trans bg-[#2DD79B] hover:border-2 hover:bg-transparent border-white flex w-fit cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
