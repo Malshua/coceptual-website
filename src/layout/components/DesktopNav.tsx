@@ -71,6 +71,8 @@ const DesktopNav = () => {
     { label: "Help Center", value: "" },
   ];
 
+  console.log(resource_options);
+
   return (
     <nav
       className={`fixed top-0 right-0 left-0 z-[999] bg-gradient-to-r from-[#FA82E0] to-[#FA82BE] hidden transition-all duration-500 ease-in-out xl:block ${
