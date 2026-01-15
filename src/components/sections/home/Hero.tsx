@@ -5,7 +5,7 @@ import { hero_image } from "../../../../public/assets/images";
 import Link from "next/link";
 import { hero_check_icon } from "../../../../public/assets/icons";
 
-const phrases = ["to use", "to buy", "to trust"];
+const phrases = ["to Use...", "to Buy...", "to Trust..."];
 
 const Hero = () => {
   const [index, setIndex] = useState(0); // phrase index
@@ -48,11 +48,7 @@ const Hero = () => {
     <span className={`${blink ? "opacity-100" : "opacity-0"}`}>|</span>
   );
 
-  const features: string[] = [
-    "Easy Set-Up",
-    "High Performance",
-    "Award Winning Support",
-  ];
+  const features: string[] = ["Media", "Consultancy", "Marketing"];
 
   return (
     <div className="h-screen">
@@ -71,7 +67,12 @@ const Hero = () => {
 
             <div className="flex flex-col gap-10">
               <h1 className="text-2xl lg:text-5xl font-bold text-white">
-                Programmatic Advertising Made Easy{" "}
+                {/* <span className="italic text-[#9B2B8E] uppercase text-2xl lg:text-4xl">
+                  {" "}
+                  Coceptual
+                </span> */}
+                <br />
+                Programmatic Advertising Made easy{" "}
                 {typedText && (
                   <span className="text-white">
                     {typedText}
@@ -81,8 +82,9 @@ const Hero = () => {
               </h1>
 
               <Link
-                className="all__trans bg-[#2DD79B] hover:border-2 hover:bg-transparent border-white flex w-64 cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
+                className="all__trans bg-[#F4B41A] hover:border-2 hover:bg-transparent border-white flex w-64 cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
                 href="https://media-frontend-ashen.vercel.app/login"
+                target="_blank"
               >
                 Get Started
               </Link>
@@ -99,7 +101,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="xl:hidden flex flex-col items-center gap-10 justify-between mt-24">
+          <div className="xl:hidden flex flex-col items-center gap-3 justify-between mt-24">
             <h1 className="text-2xl lg:text-5xl font-bold text-white text-center">
               Programmatic Advertising Made Easy{" "}
               {typedText && (
@@ -114,8 +116,9 @@ const Hero = () => {
 
             <div className="flex flex-col items-center justify-center gap-10">
               <Link
-                className="all__trans bg-[#2DD79B] hover:border-2 hover:bg-transparent border-white flex w-64 cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
+                className="text-sm all__trans bg-[#F4B41A] hover:border-2 hover:bg-transparent border-white flex w-64 cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-semibold text-white"
                 href="https://media-frontend-ashen.vercel.app/login"
+                target="_blank"
               >
                 Get Started
               </Link>

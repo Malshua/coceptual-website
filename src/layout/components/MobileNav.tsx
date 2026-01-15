@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { media_logo } from "../../../public/assets/images";
 import { DropDownComponent } from "@/components/elements";
-import { navRoutes } from "@/utils/appRoutes";
+import { internalRoutes, navRoutes } from "@/utils/appRoutes";
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
@@ -39,8 +39,8 @@ const MobileNav = () => {
   const industry_options = [
     { label: "Ecommerce", link: "" },
     { label: "Agencies", link: "" },
-    { label: "Trading Platform", link: "" },
-    { label: "iGaming", link: "" },
+    // { label: "Trading Platform", link: "" },
+    // { label: "iGaming", link: "" },
   ];
 
   const resource_options = [
@@ -57,9 +57,14 @@ const MobileNav = () => {
         }`}
       >
         <div className="flex-1">
-          <Link href="">
-            <Image src={media_logo} alt="akilaah logo" width="55" height="55" />
-          </Link>
+          <div className="flex items-center">
+            <Link href={internalRoutes.HOME} className="mr-2">
+              <Image src={media_logo} alt="media logo" width="60" height="60" />
+            </Link>
+            <p className="text-2xl font-semibold bg-gradient-to-r  from-[#9B2B8E] via-[#F4B41A] to-[#8A8A8A] bg-clip-text text-transparent">
+              Coceptual Ltd
+            </p>
+          </div>
         </div>
 
         <div className="mr-2 flex items-center gap-5 xl:hidden">
@@ -112,7 +117,7 @@ const MobileNav = () => {
           </button>
 
           <Link
-            className="all__trans bg-[#2DD79B] hover:border-2 hover:bg-transparent border-white flex w-full cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
+            className="all__trans bg-[#F4B41A] hover:border-2 hover:bg-transparent border-white flex w-full cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
             href=""
           >
             Book a Free Demo

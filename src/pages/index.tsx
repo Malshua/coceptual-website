@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { PageSEO } from "@/layout/components";
 import {
+  AboutUs,
   Hero,
   HighLights,
   HowAdWorks,
@@ -45,6 +46,7 @@ export default function Home() {
         <HighLights />
         <WhatYouCan />
         <HowAdWorks />
+        <AboutUs />
       </div>
     </div>
   );
