@@ -1,3 +1,4 @@
+export { default as AboutUs } from "./AboutUs";
 export { default as Hero } from "./Hero";
 export { default as JoinBrands } from "./JoinBrands";
 export { default as HighLights } from "./HighLights";

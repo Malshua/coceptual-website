@@ -61,12 +61,12 @@ const DesktopNav = () => {
   const industry_options = [
     { label: "Ecommerce", value: "" },
     { label: "Agencies", value: "" },
-    { label: "Trading Platform", value: "" },
-    { label: "iGaming", value: "" },
+    // { label: "Trading Platform", value: "" },
+    // { label: "iGaming", value: "" },
   ];
 
   const resource_options = [
-    { label: "Careers", value: "" },
+    // { label: "Careers", value: "" },
     { label: "Contact", value: "" },
     { label: "Help Center", value: "" },
   ];
@@ -79,14 +79,20 @@ const DesktopNav = () => {
     >
       <div className="max-w-[1400px] w-full px-4 mx-auto">
         <div className="flex items-center justify-between">
-          <Link href={internalRoutes.HOME} className="mr-4">
-            <Image src={media_logo} alt="media logo" width="60" height="60" />
-          </Link>
+          <div className="flex items-center">
+            <Link href={internalRoutes.HOME} className="mr-2">
+              <Image src={media_logo} alt="media logo" width="60" height="60" />
+            </Link>
+            <p className="text-2xl font-semibold bg-gradient-to-r  from-[#9B2B8E] via-[#F4B41A] to-[#8A8A8A] bg-clip-text text-transparent">
+              Coceptual Ltd
+            </p>
+          </div>
 
           <ul className="flex justify-around gap-8 text-white">
-            <button
-              onMouseOver={handleMouseOverFeatures}
-              onMouseLeave={handleMouseLeaveFeatures}
+            <a
+              // onMouseOver={handleMouseOverFeatures}
+              // onMouseLeave={handleMouseLeaveFeatures}
+              href="#features"
               className="text-white relative flex items-center gap-1 hover:border-b-2 border-white outline-none py-5"
             >
               <span>Platform Features</span>
@@ -104,7 +110,7 @@ const DesktopNav = () => {
                   ))}
                 </div>
               )}
-            </button>
+            </a>
 
             <button
               onMouseOver={handleMouseOverIndustry}
@@ -165,12 +171,15 @@ const DesktopNav = () => {
           </ul>
 
           <div className="flex items-center gap-8">
-            <button className="py-6.5 hover:border-b-2 border-white all__trans text-white">
+            <Link
+              href="https://media-frontend-ashen.vercel.app/login"
+              className="py-6.5 hover:border-b-2 border-white all__trans text-white"
+            >
               <span>Login</span>
-            </button>
+            </Link>
 
             <Link
-              className="all__trans bg-[#2DD79B] hover:border-2 hover:bg-transparent border-white flex w-fit cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
+              className="all__trans bg-[#F4B41A] hover:border-2 hover:bg-transparent border-white flex w-fit cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
               href=""
             >
               Book a Free Demo
