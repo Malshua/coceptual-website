@@ -1,45 +1,44 @@
-import React from "react";
-import {
-  create_icon,
-  discover_icon,
-  prepare_icon,
-  reach_icon,
-  setup_icon,
-  watch_icon,
-} from "../../../../public/assets/icons";
 import { Wrapper } from "@/layout/components";
 import Image from "next/image";
+import {
+  img341,
+  img342,
+  img345,
+  img346,
+  img347,
+  img623,
+} from "../../../../public/assets/images";
 
 const data = [
   {
-    icon: create_icon,
-    title: "1. Create a Coceptual account",
-    text: "Sign up for a free demo of the platform. You'll be amazed at how easy it is to start high-performing programmatic campaigns.",
+    icon: img623,
+    title: "1. Event Coverage and Live Streaming",
+    text: "We provide all kinds of Event production coverage with world class live streaming services. whether it's a corporate event, concert, or personal celebration. Our state-of-the-art technology and approach, guarantee your event broadcast across the globe.",
   },
   {
-    icon: prepare_icon,
-    title: "2. Prepare your ads",
-    text: "Upload your banners to the platform or build eye-catching creatives yourself in our own Creative Studio.",
+    icon: img342,
+    title: "2. Camera and lighting",
+    text: "We are well-equipped with top-quality equipment that can deliver exceptionally detailed images and video content for documentary and filmmaking, utilizing fresh material.",
   },
   {
-    icon: setup_icon,
-    title: "3. Set up a programmatic campaign",
-    text: "Get your campaign up and running in no time. All you have to do is set your goals – the rest will be taken care of.",
+    icon: img341,
+    title: "3. Video Editing",
+    text: "This is the hallmark of any content, whether it's interviews, TV events, or archival work. Our primary goal is to ensure that the final product meets your expectations, and that’s exactly what we strive to achieve",
   },
   {
-    icon: watch_icon,
-    title: "4. Watch an AI optimise for you",
-    text: "We're proud of the results our AI is delivering with smart ad placements. Once you see how much time it will save you, we're sure you'll see why.",
+    icon: img345,
+    title: "4. Graphic design ",
+    text: "Design serves as a powerful medium for conveying our message effectively. We achieve this through compelling creative graphic design that simplifies and clarifies our illustrations.",
   },
   {
-    icon: discover_icon,
-    title: "5. Discover useful insights",
-    text: "See transparent reports of how your ads are performing on which websites, and track what you're getting for your money.",
+    icon: img346,
+    title: "5. Marketing",
+    text: "Media and marketing are closely intertwined. The ability to offer expertise in content marketing, sponsorship, and partnership is a distinctive quality that only the most well trained professionals can deliver",
   },
   {
-    icon: reach_icon,
-    title: "6. Reach customers that are slipping away",
-    text: "Stay top of mind with the people who visited your site and left without buying anything, with retargeting ads.",
+    icon: img347,
+    title: "6. Photography",
+    text: "Photography is crucial in bringing your creative vision to life. It is a stunning art form that enables enthusiastic learners to harness light in the most imaginative ways",
   },
 ];
 
@@ -48,14 +47,20 @@ const HowAdWorks = () => {
     <div className="py-20 border-t border-b border-gray-100">
       <Wrapper className="flex flex-col gap-14">
         <h3 className="text-[#28273A] text-xl md:text-2xl lg:text-4xl font-bold text-center">
-          How Programmatic Advertising Works
+          Our Production Competence
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {data.map((dat, i) => (
             <div key={i} className="flex flex-col p-4">
               <div className="flex flex-col gap-4">
-                <div className="p-5 h-20 w-20 rounded-full shadow flex justify-center items-center">
-                  <Image src={dat?.icon} alt="card image" />
+                <div className="h-20 w-20 rounded-full shadow flex justify-center items-center">
+                  <Image
+                    src={dat?.icon}
+                    alt="card image"
+                    height={100}
+                    width={100}
+                    className="object-cover rounded-full h-20 w-20"
+                  />
                 </div>
                 <h3 className={`text-lg font-semibold text-left leading-5`}>
                   {dat?.title}

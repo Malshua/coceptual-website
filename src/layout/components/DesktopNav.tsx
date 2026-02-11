@@ -61,32 +61,38 @@ const DesktopNav = () => {
   const industry_options = [
     { label: "Ecommerce", value: "" },
     { label: "Agencies", value: "" },
-    { label: "Trading Platform", value: "" },
-    { label: "iGaming", value: "" },
+    // { label: "Trading Platform", value: "" },
+    // { label: "iGaming", value: "" },
   ];
 
   const resource_options = [
-    { label: "Careers", value: "" },
+    // { label: "Careers", value: "" },
     { label: "Contact", value: "" },
     { label: "Help Center", value: "" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 z-[999] bg-gradient-to-r from-[#FA82E0] to-[#FA82BE] hidden transition-all duration-500 ease-in-out xl:block ${
+      className={`fixed top-0 right-0 left-0 z-999 bg-linear-to-r from-[#FA82E0] to-[#FA82BE] hidden transition-all duration-500 ease-in-out xl:block ${
         navbar ? "shadow" : navbar
       }`}
     >
-      <div className="max-w-[1400px] w-full px-4 mx-auto">
+      <div className="max-w-350 w-full px-4 mx-auto">
         <div className="flex items-center justify-between">
-          <Link href={internalRoutes.HOME} className="mr-4">
-            <Image src={media_logo} alt="media logo" width="60" height="60" />
-          </Link>
+          <div className="flex items-center">
+            <Link href={internalRoutes.HOME} className="mr-2">
+              <Image src={media_logo} alt="media logo" width="60" height="60" />
+            </Link>
+            <p className="text-2xl font-semibold bg-gradient-to-r  from-[#9B2B8E] via-[#F4B41A] to-[#8A8A8A] bg-clip-text text-transparent">
+              Coceptual Ltd
+            </p>
+          </div>
 
           <ul className="flex justify-around gap-8 text-white">
-            <button
-              onMouseOver={handleMouseOverFeatures}
-              onMouseLeave={handleMouseLeaveFeatures}
+            <a
+              // onMouseOver={handleMouseOverFeatures}
+              // onMouseLeave={handleMouseLeaveFeatures}
+              href="#features"
               className="text-white relative flex items-center gap-1 hover:border-b-2 border-white outline-none py-5"
             >
               <span>Platform Features</span>
@@ -104,7 +110,7 @@ const DesktopNav = () => {
                   ))}
                 </div>
               )}
-            </button>
+            </a>
 
             <button
               onMouseOver={handleMouseOverIndustry}
@@ -173,7 +179,7 @@ const DesktopNav = () => {
             </Link>
 
             <Link
-              className="all__trans bg-[#2DD79B] hover:border-2 hover:bg-transparent border-white flex w-fit cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
+              className="all__trans bg-[#F4B41A] hover:border-2 hover:bg-transparent border-white flex w-fit cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-white"
               href=""
             >
               Book a Free Demo

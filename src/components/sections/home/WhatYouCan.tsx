@@ -1,33 +1,28 @@
 import { Wrapper } from "@/layout/components";
 import React from "react";
-import {
-  bring_right,
-  curious_customer,
-  large_context,
-} from "../../../../public/assets/images";
+import { img380, img398, img407 } from "../../../../public/assets/images";
 import Image from "next/image";
-import Link from "next/link";
 
 const data = [
   {
-    image: bring_right,
-    title: "Bring the right people to your website",
-    text: "Get your message across. Automatically find new customers online and draw in the people who are looking for what you're offering.",
+    image: img407,
+    title: "Media Buy",
+    text: "At Coceptual Ltd, we specialize in creating tailored media buy plans that maximize exposure while staying within budget. Our expertise in negotiating with networks and stations ensures that our clients receive prime slots and the best possible rates. ",
     bttnColor: "#18D2D9",
     bttnText: "Prospecting Ads",
     item: true,
   },
   {
-    image: curious_customer,
-    title: "Turn curious visitors into paying customers",
-    text: "Stay on top of your future customers’ minds. Display retargeting ads to visitors who showed intent but haven't made the decision yet.",
+    image: img380,
+    title: "Podcasting",
+    text: "Our podcast space provides a platform for creatives to produce high-quality content throughout the day. We uphold the highest standards in video and content development, utilizing top-notch production equipment and skilled teams to support your content creation needs.",
     bttnColor: "#E333B9",
     bttnText: "Retargeting Ads",
   },
   {
-    image: large_context,
-    title: "Show your ads in the perfect context",
-    text: "Powered by Moments AI's cutting-edge contextual targeting, Match2One scans thousands of premium websites within 20 milliseconds, making pages in contextual segments accessible to you in real-time.",
+    image: img398,
+    title: "Broadcast Coverage",
+    text: "Our event coverage capacity is ever improving, using minimal technology to achieve bigger event coverage. We have adequate equipment to meet  your coverage needs, no matter the capacity of such event. Church programs, Weddings, Seminars, Live Concerts, Ceremonies, Symposium and much more.",
     bttnColor: "#18D2D9",
     bttnText: "Contextual Ads",
   },
@@ -35,7 +30,10 @@ const data = [
 
 const WhatYouCan = () => {
   return (
-    <div className="bg-gradient-to-r from-[#F9F9F9] to-[#FFFFFF] py-20">
+    <div
+      className="bg-gradient-to-r from-[#F9F9F9] to-[#FFFFFF] py-20"
+      id="features"
+    >
       <Wrapper className="flex flex-col gap-14">
         <h3 className="text-[#28273A] text-xl md:text-2xl lg:text-4xl font-bold text-center">
           What can you do with Coceptual?
@@ -58,7 +56,7 @@ const WhatYouCan = () => {
                 <p className="text-sm text-center">{dat?.text}</p>
               </div>
 
-              <Link
+              {/* <Link
                 className={`all__trans border-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-1 font-medium mt-auto`}
                 href=""
                 style={{
@@ -67,7 +65,7 @@ const WhatYouCan = () => {
                 }}
               >
                 {dat?.bttnText}
-              </Link>
+              </Link> */}
             </div>
           ))}
         </div>
