@@ -30,7 +30,7 @@ const Hero = () => {
       () => {
         setSubIndex((prev) => (deleting ? prev - 1 : prev + 1));
       },
-      deleting ? 50 : 100
+      deleting ? 50 : 100,
     );
 
     return () => clearTimeout(timeout);
@@ -72,13 +72,13 @@ const Hero = () => {
                   Coceptual
                 </span> */}
                 <br />
-                Programmatic Advertising Made easy{" "}
-                {typedText && (
+                We&apos;re all about Sales Result{" "}
+                {/* {typedText && (
                   <span className="text-white">
                     {typedText}
                     {showCursor}
                   </span>
-                )}
+                )} */}
               </h1>
 
               <Link
