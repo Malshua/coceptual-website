@@ -73,11 +73,11 @@ const DesktopNav = () => {
 
   return (
     <nav
-      className={`fixed top-0 right-0 left-0 z-[999] bg-gradient-to-r from-[#FA82E0] to-[#FA82BE] hidden transition-all duration-500 ease-in-out xl:block ${
+      className={`fixed top-0 right-0 left-0 z-999 bg-linear-to-r from-[#FA82E0] to-[#FA82BE] hidden transition-all duration-500 ease-in-out xl:block ${
         navbar ? "shadow" : navbar
       }`}
     >
-      <div className="max-w-[1400px] w-full px-4 mx-auto">
+      <div className="max-w-350 w-full px-4 mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href={internalRoutes.HOME} className="mr-2">
